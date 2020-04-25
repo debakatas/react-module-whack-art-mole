@@ -27,7 +27,7 @@ const StyledLi = styled.li`
     flex-shrink: 0;
     background-size: cover;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: flex-start;
     position: relative;
 `;
