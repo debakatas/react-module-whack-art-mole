@@ -13,22 +13,36 @@ const StyledFigure = styled.figure`
         float: right;
         position: absolute;
         width: 100%;
-        bottom: 0;
+        bottom: -50%;
         left: 0;
     }
 
     .toilet {
-        max-height: 96px;
+        max-height: 80px;
     }
+`;
+
+const StyledDiv = styled.div`
+    position: absolute;
+    height: 300%;
+    width: 78%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 45%;
+    overflow: hidden;
+    clip-path: ellipse(85% 41% at 50% 60%);
 `;
 
 const ToiletItem = ({ activeArtist }) => (
     <StyledFigure>
-        <img
-            src={`../src/assets/${activeArtist}/mole.png`}
-            alt=""
-            className="mole"
-        />
+        <StyledDiv>
+            <img
+                src={`../src/assets/${activeArtist}/mole.png`}
+                alt=""
+                className="mole"
+            />
+        </StyledDiv>
+
         <img
             className="toilet"
             src="../src/assets/toilet.png"

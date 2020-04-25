@@ -7,7 +7,7 @@ const StyledMain = styled.main`
     background-image: url('../src/assets/table.png');
     width: 100vw;
     background-position: center 20%;
-    margin-bottom: 120px;
+    margin-bottom: 5%;
     position: relative;
 
     &::after {
