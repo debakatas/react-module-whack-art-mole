@@ -17,4 +17,7 @@ import './style/global.styl';
 const HotApp = hot(() => <App></App>);
 
 // Get our App.jsx and mount it all into the #debakatas div
-ReactDOM.render(<HotApp />, document.getElementById('debakatas'));
+ReactDOM.render(
+    <HotApp />,
+    document.getElementById('debakatas')
+);
