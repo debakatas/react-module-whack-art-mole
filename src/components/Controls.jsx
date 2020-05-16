@@ -5,6 +5,7 @@ const StyledAside = styled.aside`
     position: fixed;
     right: 1rem;
     top: 1rem;
+    z-index: 100;
 `;
 
 const StyledDiv = styled.div`
@@ -33,7 +34,7 @@ const StyledSmall = styled.small`
     }
 `;
 
-const Controls = ({ lives = 5, points = 3 }) => (
+const Controls = ({ lives, points }) => (
     <StyledAside>
         <StyledDiv>
             <StyledH3>Lives</StyledH3>

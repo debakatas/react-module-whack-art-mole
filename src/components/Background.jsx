@@ -42,10 +42,7 @@ const StyledH2 = styled.h2`
     color: white;
 `;
 
-const Background = ({
-    artists,
-    activeArtist = 'beksinski',
-}) => (
+const Background = ({ artists, activeArtist }) => (
     <StyledUl visible={artists.indexOf(activeArtist)}>
         {artists.map((artist) => (
             <StyledLi artist={artist}>
