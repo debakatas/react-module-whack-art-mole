@@ -27,14 +27,14 @@ const StyledLi = styled.li`
     flex-shrink: 0;
     background-size: cover;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: flex-start;
     position: relative;
 `;
 
 const StyledH2 = styled.h2`
     font-family: var(--font-funny);
-    font-size: ${(props) => 100 / props.length}vh;
+    font-size: ${(props) => 80 / props.length}vmin;
     writing-mode: vertical-lr;
     position: absolute;
     left: 30%;
